@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'AccuminBDpro';
+    src: url("./fonts/Acumin-BdPro.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AccuminBDpro';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#home:hover, #work:hover{
+    text-decoration: underline;
+}
+
+#twitter{
+    transition: all ease 0.3s;
+}
+
+#twitter:hover{
+    transform: rotate(-20deg) scale(1.2);
+    
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    height: 100vh;
+    width: 40%;
+    background-color: #FFFFFF;
+}
+
+.right{
+    height: 100vh;
+    width: 60%;
+}
+
+.right-top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-bottom{
+    height: 50%;
+    width: 100%;
+    background-color: #C1E1EC;
+    position: relative;
+}
+
+.right-top-left{
+    height: 100%;
+    width: 55%;
+    background-color: #F1E5E7;
+    position: relative;
+}
+
+.right-top-right{
+    height: 100%;
+    width: 45%;
+    background-color: #F0B122;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F1E5E7;
+}
+
+.nav-content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > a i{
+    font-size: 2vw;
+}
+
+.nav-content i{
+    font-size: 2vw;
+    color: #1DA1F2;
+}
+
+.content{
+    height: calc(100vh - 100px);
+    width: 100%;
+    /* background-color: #F0B122; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    height: 60%;
+    width: 70%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text h1{
+    font-size: 6vw;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.text h4{
+    font-size: 2vw;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.text button{
+    margin-top: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right-top-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 99;
+}
+
+#tag{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%);
+    font-size: 8vw;
+    z-index: 98;
+    color: white;
+    text-transform: uppercase;
+}
+
+.right-top-left #nerd{
+    position: absolute;
+    left: 41%;
+    transform: translate(-50%);
+    top: 50%;
+    font-size: 8vw;
+    z-index: 100;
+    color: white;
+    text-transform: uppercase;
+}
+
+.right-top-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.right-bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.arrow-container{
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    background-color: #FFFFFF;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 4vw;
+}
